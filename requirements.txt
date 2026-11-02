@@ -1,0 +1,10 @@
+streamlit
+google-genai
+langchain
+langchain-chroma
+chromadb
+pymupdf
+python-docx
+python-dotenv
+pandas
+pytest
