@@ -1,4 +1,3 @@
-
 import streamlit as st
 from pathlib import Path
 import uuid
@@ -116,7 +115,7 @@ def login_page():
 
             submitted = st.form_submit_button(
                 "Login",
-                use_container_width=True
+                width="stretch"
             )
 
             if submitted:
@@ -225,7 +224,7 @@ def document_management(user):
 
         upload_submitted = st.form_submit_button(
             "Upload and Index Document",
-            use_container_width=True
+            width="stretch"
         )
 
     if not upload_submitted:
@@ -445,7 +444,7 @@ def audit_log_dashboard():
 
             st.dataframe(
                 audit_logs,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -726,7 +725,7 @@ def main():
 
             if st.button(
                 "Logout",
-                use_container_width=True
+                width="stretch"
             ):
 
                 log_activity(
